@@ -7,3 +7,13 @@ The DB URL is stored in a ConfigMap.
 The DB Username, DB Password are stored in a Secret.
 
 ![alt text](Diagram.png)
+
+
+First creat the cluster 
+'''bash
+minikube start 
+''' 
+Start by creating the secret to store the database credentials:
+'''bash 
+kubectl apply -f mongo-secret.yaml
+'''

@@ -25,3 +25,8 @@ Then we create the config map that will store the database url which is nothing 
 '''bash 
 kubectl apply -f mongo-configmap.yaml
 '''
+Next we create the mongo-express deployment and its external service. The yaml file references the mongo-secret and the mongo-configmap that's why we need to create them before. 
+'''bash 
+kubectl apply -f mongo-express.yaml
+'''
+

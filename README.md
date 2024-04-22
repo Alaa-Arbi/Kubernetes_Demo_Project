@@ -21,3 +21,7 @@ Now we create the MongoDB Pod and its service and reference the secret inside it
 '''bash 
 kubectl apply -f mongoDB.yaml
 '''
+Then we create the config map that will store the database url which is nothing else but the service attached to the monogoDB database. 
+'''bash 
+kubectl apply -f mongo-configmap.yaml
+'''

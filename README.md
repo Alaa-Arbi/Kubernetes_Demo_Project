@@ -17,3 +17,7 @@ Start by creating the secret to store the database credentials:
 '''bash 
 kubectl apply -f mongo-secret.yaml
 '''
+Now we create the MongoDB Pod and its service and reference the secret inside it to get the credentials
+'''bash 
+kubectl apply -f mongoDB.yaml
+'''
